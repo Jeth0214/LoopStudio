@@ -536,6 +536,18 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.container{
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 1086px){
+  .container{
+    max-width: 1086px;
+  }
+}
+
 .relative{
   position: relative;
 }
@@ -548,8 +560,8 @@ video {
   display: grid;
 }
 
-.h-screen{
-  height: 100vh;
+.h-6{
+  height: 1.5rem;
 }
 
 .cursor-pointer{
@@ -592,6 +604,10 @@ video {
   font-family: Josefin Sans;
 }
 
+.text-2xl{
+  font-size: 1.5rem;
+}
+
 .text-base{
   font-size: 15px;
 }
@@ -605,7 +621,7 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.nav-toggle {
+.nav__toggle {
   cursor: pointer;
   height: 16px;
   width: 24px;
@@ -637,13 +653,53 @@ video {
   transform: translate(-50%, 5px);
 }
 
+.nav--active .nav__toggle {
+  .nav__burger-line--1 {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  .nav__burger-line--2 {
+    width: 0;
+  }
+  .nav__burger-line--3 {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+}
+
+.nav__links {
+  /* left: -200px;
+  width: 0%;
+  height: 100%;
+  background-color: black;
+  position: fixed;
+  top: 104px;
+  transition: all 0.7s ease-in-out; */
+  display: flex;
+}
+
+.nav__link {
+  padding: 12px 24px;
+}
+
+.nav--active .nav__links {
+  left: 0;
+  width: 100%;
+}
+
 @media (min-width: 768px){
   .md\:hidden{
     display: none;
   }
 
+  .md\:h-8{
+    height: 2rem;
+  }
+
   .md\:font-alata{
     font-family: Alata;
+  }
+
+  .md\:text-base{
+    font-size: 15px;
   }
 
   .md\:capitalize{

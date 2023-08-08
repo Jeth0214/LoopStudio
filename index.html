@@ -15,41 +15,44 @@
     <title>Frontend Mentor | Loopstudios landing page</title>
 
     <link rel="stylesheet" href="dist/styles.css" />
-    <script defer src="src/js/burger-menu.js"></script>
+    <script defer src="src/js/nav-menu.js"></script>
   </head>
   <body class="font-alata text-base">
-    <header class="bg-black">
-      <nav class="nav px-6 flex items-center justify-between relative">
-        <div class="py-10">
-          <img src="src/images/logo.svg" alt="Loopstudios" />
+    <header id="header">
+      <nav
+        id="nav"
+        class="bg-black nav container px-6 flex items-center justify-between relative"
+      >
+        <div class="py-10 nav-brand">
+          <img class="h-6 md:h-8" src="src/images/logo.svg" alt="Loopstudios" />
         </div>
 
         <!-- Nav Hamburger Menu -->
-        <button class="md:hidden cursor-pointer nav-toggle" id="navToggle">
+        <button class="md:hidden cursor-pointer nav__toggle" id="navToggle">
           <span class="nav__burger-line nav__burger-line--1"></span>
           <span class="nav__burger-line nav__burger-line--2"></span>
           <span class="nav__burger-line nav__burger-line--3"></span>
         </button>
 
-        <!-- <ul
-          class="font-josefin md:font-alata uppercase md:capitalize text-white py-6 h-screen"
+        <ul
+          class="font-josefin md:font-alata uppercase md:capitalize text-white py-6 nav__links"
         >
-          <li>
+          <li class="nav__link text-2xl md:text-base">
             <a href="#">About</a>
           </li>
-          <li>
+          <li class="nav__link text-2xl md:text-base">
             <a href="#">Careers</a>
           </li>
-          <li>
+          <li class="nav__link text-2xl md:text-base">
             <a href="#">Events</a>
           </li>
-          <li>
+          <li class="nav__link text-2xl md:text-base">
             <a href="#">Products</a>
           </li>
-          <li>
+          <li class="nav__link text-2xl md:text-base">
             <a href="#">Support</a>
           </li>
-        </ul> -->
+        </ul>
       </nav>
     </header>
 
