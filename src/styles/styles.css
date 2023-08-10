@@ -36,27 +36,13 @@
   transform: translate(-50%, 5px);
 }
 
-.nav--active .nav__burger-line--1 {
-  transform: translate(-50%, -50%) rotate(-45deg);
-}
-
-.nav--active .nav__burger-line--2 {
-  width: 0;
-}
-
-.nav--active .nav__burger-line--3 {
-  transform: translate(-50%, -50%) rotate(45deg);
-}
-
 /* Nav Links */
-
 .nav__links {
   visibility: hidden;
   position: fixed;
   height: 0;
   width: 0;
   left: 0;
-  background-color: black;
 }
 
 @media (min-width: 768px) {
@@ -71,6 +57,34 @@
   padding: 12px 24px;
 }
 
+.nav__link a {
+  position: relative;
+}
+
+/* Nav links on hover */
+.nav__link a:after {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0;
+  content: ".";
+  color: transparent;
+  background: #fff;
+  height: 2px;
+  transition: all 0.3s linear;
+}
+.nav__link a:hover:after {
+  width: 50%;
+}
+
+/* Nav active states */
+.nav--active.nav {
+  transition: background-color 0.5s linear;
+  background-color: black;
+}
+
 .nav--active .nav__links {
   top: 104px;
   visibility: visible;
@@ -78,8 +92,22 @@
   height: 100%;
   z-index: 3;
   animation: opac 0.5s linear;
+  background-color: black;
 }
 
+.nav--active .nav__burger-line--1 {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.nav--active .nav__burger-line--2 {
+  width: 0;
+}
+
+.nav--active .nav__burger-line--3 {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* Nav animations */
 @keyframes opac {
   from {
     opacity: 0;
@@ -88,4 +116,8 @@
   to {
     opacity: 1;
   }
+}
+
+.bg-black {
+  background-color: black;
 }

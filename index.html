@@ -17,13 +17,14 @@
     <link rel="stylesheet" href="dist/styles.css" />
     <script defer src="src/js/nav-menu.js"></script>
   </head>
-  <body class="font-alata text-base">
+  <body class="font-alata">
     <header id="header">
+      <!-- Navigation bar -->
       <nav
         id="nav"
-        class="bg-black nav container px-6 flex items-center justify-between relative"
+        class="nav container px-6 flex items-center justify-between fixed right-0 left-0 z-10 py-10 md:py-16"
       >
-        <div class="py-10 nav-brand">
+        <div class="nav-brand">
           <img class="h-6 md:h-8" src="src/images/logo.svg" alt="Loopstudios" />
         </div>
 
@@ -35,7 +36,7 @@
         </button>
 
         <ul
-          class="font-josefin md:font-alata uppercase md:flex md:w-auto md:capitalize text-white py-6 nav__links"
+          class="font-josefin md:font-alata uppercase md:flex md:w-auto md:capitalize text-white nav__links"
         >
           <li class="nav__link text-2xl md:text-base">
             <a href="#">About</a>
@@ -54,10 +55,24 @@
           </li>
         </ul>
       </nav>
+
+      <!-- Hero section -->
+      <div
+        class="hero bg-[url('/src/images/mobile/image-hero.jpg')] md:bg-[url('/src/images/desktop/image-hero.jpg')] min-h-screen bg-no-repeat bg-cover bg-center flex items-center"
+      >
+        <div class="container px-6 md:mt-28">
+          <div class="p-6 md:p-10 border-white border-2 max-w-2xl">
+            <h1
+              class="uppercase text-4xl md:text-6xl text-white max-w-xl font-josefin leading-9 md:leading-[4.375rem]"
+            >
+              Immersive experiences that deliver
+            </h1>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <!-- Immersive experiences that deliver The
-    leader in interactive VR Founded in 2011, Loopstudios has been producing
+    The leader in interactive VR Founded in 2011, Loopstudios has been producing
     world-class virtual reality projects for some of the best companies around
     the globe. Our award-winning creations have transformed businesses through
     digital experiences that bind to their brand. Our creations See all Deep
@@ -70,6 +85,6 @@
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+    </div>
   </body>
 </html>
