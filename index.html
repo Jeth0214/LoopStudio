@@ -9,58 +9,66 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="src/images/favicon-32x32.png"
     />
 
-    <title>Frontend Mentor | Loopstudios landing page</title>
+    <title>Loopstudios</title>
 
     <link rel="stylesheet" href="dist/styles.css" />
     <script defer src="src/js/nav-menu.js"></script>
   </head>
   <body class="font-alata">
-    <header id="header">
+    <header
+      id="header"
+      class="fixed top-0 z-50 flex items-center w-full py-10 md:py-16"
+    >
       <!-- Navigation bar -->
       <nav
         id="nav"
-        class="nav container px-6 flex items-center justify-between fixed right-0 left-0 z-10 py-10 md:py-16"
+        class="nav container px-6 flex items-center justify-between fixed right-0 left-0 z-10"
       >
         <div class="nav-brand">
           <img class="h-6 md:h-8" src="src/images/logo.svg" alt="Loopstudios" />
         </div>
 
         <!-- Nav Hamburger Menu -->
-        <button class="md:hidden cursor-pointer nav__toggle" id="navToggle">
+        <button
+          class="md:hidden cursor-pointer nav__toggle h-4 relative w-6 transition-all ease-in-out duration-700"
+          id="navToggle"
+        >
           <span class="nav__burger-line nav__burger-line--1"></span>
           <span class="nav__burger-line nav__burger-line--2"></span>
           <span class="nav__burger-line nav__burger-line--3"></span>
         </button>
 
         <ul
-          class="font-josefin md:font-alata uppercase md:flex md:w-auto md:capitalize text-white nav__links"
+          class="font-josefin md:font-alata uppercase hidden fixed h-0 w-0 left-0 md:visible md:relative md:h-auto md:flex md:w-auto md:capitalize text-white nav__links"
         >
-          <li class="nav__link text-2xl md:text-base">
-            <a href="#">About</a>
+          <li class="nav__link py-3 px-4 text-2xl md:text-base">
+            <a href="#" class="relative">About</a>
           </li>
-          <li class="nav__link text-2xl md:text-base">
-            <a href="#">Careers</a>
+          <li class="nav__link py-3 px-4 text-2xl md:text-base">
+            <a href="#" class="relative">Careers</a>
           </li>
-          <li class="nav__link text-2xl md:text-base">
-            <a href="#">Events</a>
+          <li class="nav__link py-3 px-4 text-2xl md:text-base">
+            <a href="#" class="relative">Events</a>
           </li>
-          <li class="nav__link text-2xl md:text-base">
-            <a href="#">Products</a>
+          <li class="nav__link py-3 px-4 text-2xl md:text-base">
+            <a href="#" class="relative">Products</a>
           </li>
-          <li class="nav__link text-2xl md:text-base">
-            <a href="#">Support</a>
+          <li class="nav__link py-3 pl-4 pr-0 text-2xl md:text-base">
+            <a href="#" class="relative">Support</a>
           </li>
         </ul>
       </nav>
+    </header>
 
+    <main>
       <!-- Hero section -->
-      <div
+      <section
         class="hero bg-[url('/src/images/mobile/image-hero.jpg')] md:bg-[url('/src/images/desktop/image-hero.jpg')] min-h-screen bg-no-repeat bg-cover bg-center flex items-center"
       >
-        <div class="container px-6 md:mt-28">
+        <div class="container px-6 mt-0 md:mt-28">
           <div class="p-6 md:p-10 border-white border-2 max-w-2xl">
             <h1
               class="uppercase text-4xl md:text-6xl text-white max-w-xl font-josefin leading-9 md:leading-[4.375rem]"
@@ -69,16 +77,45 @@
             </h1>
           </div>
         </div>
-      </div>
-    </header>
+      </section>
 
-    The leader in interactive VR Founded in 2011, Loopstudios has been producing
-    world-class virtual reality projects for some of the best companies around
-    the globe. Our award-winning creations have transformed businesses through
-    digital experiences that bind to their brand. Our creations See all Deep
-    earth Night arcade Soccer team VR The grid From up above VR Pocket borealis
-    The curiosity Make it fisheye About Careers Events Products Support © 2021
-    Loopstudios. All rights reserved.
+      <!-- About section -->
+      <section class="about my-40">
+        <div class="container px-6 relative">
+          <div class="about__image">
+            <picture>
+              <source
+                media="(min-width:650px)"
+                srcset="/src/images/desktop/image-interactive.jpg"
+              />
+              <img
+                src="src/images/desktop/image-interactive.jpg"
+                alt="Flowers"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div
+            class="bg-white max-w-xl pl-24 pt-24 md:absolute md:bottom-0 md:right-0"
+          >
+            <h2 class="text-5xl font-josefin leading-10 uppercase mb-6">
+              The leader in interactive VR
+            </h2>
+            <p class="opacity-50">
+              The leader in interactive VR Founded in 2011, Loopstudios has been
+              producing world-class virtual reality projects for some of the
+              best companies around the globe. Our award-winning creations have
+              transformed businesses through digital experiences that bind to
+              their brand.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    Our creations See all Deep earth Night arcade Soccer team VR The grid From
+    up above VR Pocket borealis The curiosity Make it fisheye About Careers
+    Events Products Support © 2021 Loopstudios. All rights reserved.
 
     <div class="attribution">
       Challenge by

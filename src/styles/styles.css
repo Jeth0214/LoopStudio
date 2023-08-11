@@ -5,94 +5,73 @@
 @tailwind utilities;
 
 /* hamburger states */
-.nav__toggle {
-  cursor: pointer;
-  height: 16px;
-  width: 24px;
-  position: relative;
-  transition: background-color 1s ease-in-out;
-}
 
 .nav__burger-line {
-  position: absolute;
-  left: 50%;
-  top: 50%;
+  @apply absolute
+  left-1/2
+  top-1/2
+  w-full
+  border-r-4
+  bg-white
+  transition-all 
+  ease-in-out
+  duration-500;
   transform: translate(-50%, -50%);
-  width: 100%;
   height: 2px;
-  border-radius: 5px;
-  background-color: #fff;
-  transition: transform 0.5s, width 0.5s;
 }
+
 .nav__burger-line--1 {
   transform: translate(-50%, -7px);
 }
 
 .nav__burger-line--2 {
-  width: 100%;
+  @apply w-full;
 }
 
 .nav__burger-line--3 {
   transform: translate(-50%, 5px);
 }
 
-/* Nav Links */
-.nav__links {
-  visibility: hidden;
-  position: fixed;
-  height: 0;
-  width: 0;
-  left: 0;
-}
-
-@media (min-width: 768px) {
-  .nav__links {
-    visibility: visible;
-    height: auto;
-    position: relative;
-  }
-}
-
-.nav__link {
-  padding: 12px 24px;
-}
-
-.nav__link a {
-  position: relative;
-}
-
 /* Nav links on hover */
 .nav__link a:after {
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0;
+  @apply absolute
+  -bottom-2.5
+  left-0
+  right-0
+  m-auto
+  w-0
+  bg-white
+  transition-all
+  ease-linear
+  duration-300;
   content: ".";
   color: transparent;
-  background: #fff;
   height: 2px;
-  transition: all 0.3s linear;
 }
-.nav__link a:hover:after {
+
+/* Nav link on active */
+
+.nav__link a:hover:after,
+.nav__link--active a::after {
   width: 50%;
 }
 
 /* Nav active states */
 .nav--active.nav {
   transition: background-color 0.5s linear;
-  background-color: black;
 }
 
 .nav--active .nav__links {
-  top: 104px;
-  visibility: visible;
-  width: 100%;
-  height: 100%;
-  z-index: 3;
+  @apply top-20
+  visible
+  w-full
+  h-full
+  z-30
+  bg-black
+  flex
+  flex-col
+  justify-center;
   animation: opac 0.5s linear;
-  background-color: black;
 }
 
 .nav--active .nav__burger-line--1 {
@@ -107,6 +86,12 @@
   transform: translate(-50%, -50%) rotate(45deg);
 }
 
+/* nav class on scroll */
+.nav--shrink {
+  @apply bg-black transition-all ease-in-out duration-500;
+  padding: 2.5rem 0 !important;
+}
+
 /* Nav animations */
 @keyframes opac {
   from {
@@ -116,8 +101,4 @@
   to {
     opacity: 1;
   }
-}
-
-.bg-black {
-  background-color: black;
 }
