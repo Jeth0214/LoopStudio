@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="dist/styles.css" />
     <script defer src="src/js/nav-menu.js"></script>
   </head>
-  <body class="font-alata">
+  <body class="font-alata min-h-screen">
     <header
       id="header"
       class="fixed top-0 z-50 flex items-center w-full py-10 md:py-16"
@@ -28,7 +28,13 @@
         class="nav container px-6 flex items-center justify-between fixed right-0 left-0 z-10"
       >
         <div class="nav-brand">
-          <img class="h-6 md:h-8" src="src/images/logo.svg" alt="Loopstudios" />
+          <a href="#">
+            <img
+              class="h-6 md:h-8"
+              src="src/images/logo.svg"
+              alt="Loopstudios"
+            />
+          </a>
         </div>
 
         <!-- Nav Hamburger Menu -->
@@ -45,7 +51,7 @@
           class="font-josefin md:font-alata uppercase hidden fixed h-0 w-0 left-0 md:visible md:relative md:h-auto md:flex md:w-auto md:capitalize text-white nav__links"
         >
           <li class="nav__link py-3 px-4 text-2xl md:text-base">
-            <a href="#" class="relative">About</a>
+            <a href="#about" class="relative">About</a>
           </li>
           <li class="nav__link py-3 px-4 text-2xl md:text-base">
             <a href="#" class="relative">Careers</a>
@@ -54,7 +60,7 @@
             <a href="#" class="relative">Events</a>
           </li>
           <li class="nav__link py-3 px-4 text-2xl md:text-base">
-            <a href="#" class="relative">Products</a>
+            <a href="#products" class="relative">Products</a>
           </li>
           <li class="nav__link py-3 pl-4 pr-0 text-2xl md:text-base">
             <a href="#" class="relative">Support</a>
@@ -80,7 +86,7 @@
       </section>
 
       <!-- About section -->
-      <section class="about my-40">
+      <section id="about" class="about my-40">
         <div class="container px-6 relative">
           <div class="about__image">
             <picture>
@@ -96,18 +102,98 @@
             </picture>
           </div>
           <div
-            class="bg-white max-w-xl pl-24 pt-24 md:absolute md:bottom-0 md:right-0"
+            class="bg-white md:max-w-xl px-5 pt-12 text-center md:text-left md:pl-24 md:pt-24 md:pr-0 md:absolute md:bottom-0 md:right-0"
           >
-            <h2 class="text-5xl font-josefin leading-10 uppercase mb-6">
-              The leader in interactive VR
+            <h2
+              class="text-3xl md:text-5xl font-josefin leading-8 md:leading-10 uppercase mb-6"
+            >
+              The leader in
+              <br />
+              interactive VR
             </h2>
             <p class="opacity-50">
-              The leader in interactive VR Founded in 2011, Loopstudios has been
-              producing world-class virtual reality projects for some of the
-              best companies around the globe. Our award-winning creations have
-              transformed businesses through digital experiences that bind to
-              their brand.
+              Founded in 2011, Loopstudios has been producing world-class
+              virtual reality projects for some of the best companies around the
+              globe. Our award-winning creations have transformed businesses
+              through digital experiences that bind to their brand.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="my-44">
+        <div class="container px-6">
+          <div
+            class="flex items-center justify-center md:justify-between mb-12 md:mb-20"
+          >
+            <h2 class="text-3xl md:text-5xl font-josefin uppercase">
+              Our Creations
+            </h2>
+            <button
+              class="uppercase hidden md:block text-base font-alata tracking-[0.3125rem] border-black border-2 py-2 px-8 hover:bg-black hover:text-white transition-all ease-in-out duration-300"
+            >
+              see all
+            </button>
+          </div>
+
+          <div class="flex gap-8 flex-col md:flex-row">
+            <figure
+              class="relative overflow-hidden cursor-pointer text-white font-josefin uppercase text-3xl leading-8 hover:opacity-50 hover:text-black"
+            >
+              <picture>
+                <source
+                  media="(min-width:768px)"
+                  srcset="src/images/desktop/image-curiosity.jpg"
+                />
+                <img
+                  src="src/images/mobile/image-curiosity.jpg"
+                  alt="Flowers"
+                />
+              </picture>
+              <figcaption class="absolute bottom-8 left-10 z-30">
+                <h3>
+                  <span>Deep</span>
+                  <br />
+                  <span>earth</span>
+                </h3>
+              </figcaption>
+            </figure>
+            <!-- <figure>
+              <picture>
+                <source
+                  media="(min-width:768px)"
+                  srcset="src/images/desktop/image-curiosity.jpg"
+                />
+                <img
+                  src="src/images/mobile/image-curiosity.jpg"
+                  alt="Flowers"
+                />
+              </picture>
+            </figure>
+            <figure>
+              <picture>
+                <source
+                  media="(min-width:768px)"
+                  srcset="src/images/desktop/image-curiosity.jpg"
+                />
+                <img
+                  src="src/images/mobile/image-curiosity.jpg"
+                  alt="Flowers"
+                />
+              </picture>
+            </figure>
+            <figure>
+              <picture>
+                <source
+                  media="(min-width:768px)"
+                  srcset="src/images/desktop/image-curiosity.jpg"
+                />
+                <img
+                  src="src/images/mobile/image-curiosity.jpg"
+                  alt="Flowers"
+                />
+              </picture>
+            </figure> -->
           </div>
         </div>
       </section>

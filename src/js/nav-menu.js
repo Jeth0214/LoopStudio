@@ -26,8 +26,8 @@ navLinks.forEach((link) => {
   link.addEventListener("click", () => {
     nav.classList.remove("nav--active");
     setLinkActive(link, navLinks);
-    header.classList.remove("bg-black"); //! change this after all sections are finished
-    header.classList.remove("nav--shrink"); //! change this after all sections are finished
+    // header.classList.remove("bg-black"); //! change this after all sections are finished
+    // header.classList.remove("nav--shrink"); //! change this after all sections are finished
   });
 });
 
@@ -45,6 +45,7 @@ function navShrink() {
 
 // set a link to the active state
 function setLinkActive(link, links) {
+  navShrink();
   link.classList.add("nav__link--active");
   let siblingLinks = [...links].filter((child) => child != link);
   siblingLinks.forEach((element) => {
