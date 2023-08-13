@@ -86,7 +86,7 @@
       </section>
 
       <!-- About section -->
-      <section id="about" class="about my-40">
+      <section id="about" class="about mt-40 mb-2">
         <div class="container px-6 relative">
           <div class="about__image">
             <picture>
@@ -120,7 +120,9 @@
           </div>
         </div>
       </section>
+      <!-- End of About Section -->
 
+      <!-- Projects Section -->
       <section id="products" class="my-44">
         <div class="container px-6">
           <div
@@ -130,27 +132,33 @@
               Our Creations
             </h2>
             <button
-              class="uppercase hidden md:block text-base font-alata tracking-[0.3125rem] border-black border-2 py-2 px-8 hover:bg-black hover:text-white transition-all ease-in-out duration-300"
+              class="uppercase hidden md:block text-base font-alata tracking-[0.3125rem] border-black border-[1px] py-2 px-8 hover:bg-black hover:text-white transition-all ease-in-out duration-300"
             >
               see all
             </button>
           </div>
-
-          <div class="flex gap-8 flex-col md:flex-row">
+          <!-- Project Row 1 -->
+          <div class="projects flex gap-8 flex-col md:flex-row mb-8">
             <figure
-              class="relative overflow-hidden cursor-pointer text-white font-josefin uppercase text-3xl leading-8 hover:opacity-50 hover:text-black"
+              class="project relative overflow-hidden cursor-pointer text-white font-josefin uppercase text-2xl lg:text-3xl leading-8 hover:text-black"
             >
+              <div
+                class="overlay absolute inset-0 bg-white z-10 transition-all ease-in-out duration-500"
+              ></div>
               <picture>
                 <source
                   media="(min-width:768px)"
-                  srcset="src/images/desktop/image-curiosity.jpg"
+                  srcset="src/images/desktop/image-deep-earth.jpg"
                 />
                 <img
-                  src="src/images/mobile/image-curiosity.jpg"
-                  alt="Flowers"
+                  class="w-full"
+                  src="src/images/mobile/image-deep-earth.jpg"
+                  alt="Deep Earth"
                 />
               </picture>
-              <figcaption class="absolute bottom-8 left-10 z-30">
+              <figcaption
+                class="absolute bottom-5 md:bottom-8 left-3 md:left-3 lg:left-8 z-30"
+              >
                 <h3>
                   <span>Deep</span>
                   <br />
@@ -158,50 +166,214 @@
                 </h3>
               </figcaption>
             </figure>
-            <!-- <figure>
+            <figure
+              class="project relative overflow-hidden cursor-pointer text-white font-josefin uppercase text-2xl lg:text-3xl leading-8 hover:text-black"
+            >
+              <div
+                class="overlay absolute inset-0 bg-white z-10 transition-all ease-in-out duration-500"
+              ></div>
               <picture>
                 <source
                   media="(min-width:768px)"
-                  srcset="src/images/desktop/image-curiosity.jpg"
+                  srcset="src/images/desktop/image-night-arcade.jpg"
                 />
                 <img
-                  src="src/images/mobile/image-curiosity.jpg"
-                  alt="Flowers"
+                  class="w-full"
+                  src="src/images/mobile/image-night-arcade.jpg"
+                  alt="Night Arcade"
                 />
               </picture>
+              <figcaption
+                class="absolute bottom-5 md:bottom-8 left-3 md:left-3 lg:left-8 z-30"
+              >
+                <h3>
+                  <span>Night</span>
+                  <br />
+                  <span>Arcade</span>
+                </h3>
+              </figcaption>
             </figure>
-            <figure>
+            <figure
+              class="project relative overflow-hidden cursor-pointer text-white font-josefin uppercase text-2xl lg:text-3xl leading-8 hover:text-black"
+            >
+              <div
+                class="overlay absolute inset-0 bg-white z-10 transition-all ease-in-out duration-500"
+              ></div>
               <picture>
                 <source
                   media="(min-width:768px)"
-                  srcset="src/images/desktop/image-curiosity.jpg"
+                  srcset="src/images/desktop/image-soccer-team.jpg"
                 />
                 <img
-                  src="src/images/mobile/image-curiosity.jpg"
-                  alt="Flowers"
+                  class="w-full"
+                  src="src/images/mobile/image-soccer-team.jpg"
+                  alt="Soccer Team"
                 />
               </picture>
+              <figcaption
+                class="absolute bottom-5 md:bottom-8 left-5 md:left-3 lg:left-8 z-30"
+              >
+                <h3>
+                  <span>Soccer</span>
+                  <br />
+                  <span>Team</span>
+                </h3>
+              </figcaption>
             </figure>
-            <figure>
+            <figure
+              class="project relative overflow-hidden cursor-pointer text-white font-josefin uppercase text-2xl lg:text-3xl leading-8 hover:text-black"
+            >
+              <div
+                class="overlay absolute inset-0 bg-white z-10 transition-all ease-in-out duration-500"
+              ></div>
+              <picture>
+                <source
+                  media="(min-width:768px)"
+                  srcset="src/images/desktop/image-grid.jpg"
+                />
+                <img
+                  class="w-full"
+                  src="src/images/mobile/image-grid.jpg"
+                  alt="The Grid"
+                />
+              </picture>
+              <figcaption
+                class="absolute bottom-5 md:bottom-8 left-5 md:left-3 lg:left-8 z-30"
+              >
+                <h3>
+                  <span>The</span>
+                  <br />
+                  <span>Grid</span>
+                </h3>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Project Row 2 -->
+          <div
+            class="projects flex gap-8 flex-col items-center jus\ md:flex-row"
+          >
+            <figure
+              class="project relative overflow-hidden cursor-pointer text-white font-josefin uppercase text-2xl lg:text-3xl leading-8 hover:text-black"
+            >
+              <div
+                class="overlay absolute inset-0 bg-white z-10 transition-all ease-in-out duration-500"
+              ></div>
+              <picture>
+                <source
+                  media="(min-width:768px)"
+                  srcset="src/images/desktop/image-from-above.jpg"
+                />
+                <img
+                  class="w-full"
+                  src="src/images/mobile/image-from-above.jpg"
+                  alt="Above VR"
+                />
+              </picture>
+              <figcaption
+                class="absolute bottom-5 md:bottom-8 left-5 md:left-3 lg:left-8 z-30"
+              >
+                <h3>
+                  <span>From up</span>
+                  <br />
+                  <span>Above Vr</span>
+                </h3>
+              </figcaption>
+            </figure>
+            <figure
+              class="project relative overflow-hidden cursor-pointer text-white font-josefin uppercase text-2xl lg:text-3xl leading-8 hover:text-black"
+            >
+              <div
+                class="overlay absolute inset-0 bg-white z-10 transition-all ease-in-out duration-500"
+              ></div>
+              <picture>
+                <source
+                  media="(min-width:768px)"
+                  srcset="src/images/desktop/image-pocket-borealis.jpg"
+                />
+                <img
+                  class="w-full"
+                  src="src/images/mobile/image-pocket-borealis.jpg"
+                  alt="Pocket Borealis"
+                />
+              </picture>
+              <figcaption
+                class="absolute bottom-5 md:bottom-8 left-5 md:left-3 lg:left-8 z-30"
+              >
+                <h3>
+                  <span>Pocket</span>
+                  <br />
+                  <span>Borealis</span>
+                </h3>
+              </figcaption>
+            </figure>
+            <figure
+              class="project relative overflow-hidden cursor-pointer text-white font-josefin uppercase text-2xl lg:text-3xl leading-8 hover:text-black"
+            >
+              <div
+                class="overlay absolute inset-0 bg-white z-10 transition-all ease-in-out duration-500"
+              ></div>
               <picture>
                 <source
                   media="(min-width:768px)"
                   srcset="src/images/desktop/image-curiosity.jpg"
                 />
                 <img
+                  class="w-full"
                   src="src/images/mobile/image-curiosity.jpg"
-                  alt="Flowers"
+                  alt="The curiosity"
                 />
               </picture>
-            </figure> -->
+              <figcaption
+                class="absolute bottom-5 md:bottom-8 left-5 md:left-3 lg:left-8 z-30"
+              >
+                <h3>
+                  <span>The</span>
+                  <br />
+                  <span>Curiosity</span>
+                </h3>
+              </figcaption>
+            </figure>
+            <figure
+              class="project relative overflow-hidden cursor-pointer text-white font-josefin uppercase text-2xl lg:text-3xl leading-8 hover:text-black"
+            >
+              <div
+                class="overlay absolute inset-0 bg-white z-10 transition-all ease-in-out duration-500"
+              ></div>
+              <picture>
+                <source
+                  media="(min-width:768px)"
+                  srcset="src/images/desktop/image-fisheye.jpg"
+                />
+                <img
+                  class="w-full"
+                  src="src/images/mobile/image-fisheye.jpg"
+                  alt="Fish Eye"
+                />
+              </picture>
+              <figcaption
+                class="absolute bottom-5 md:bottom-8 left-5 md:left-3 lg:left-8 z-30"
+              >
+                <h3>
+                  <span>Make it</span>
+                  <br />
+                  <span>Fisheye</span>
+                </h3>
+              </figcaption>
+            </figure>
           </div>
         </div>
-      </section>
-    </main>
 
-    Our creations See all Deep earth Night arcade Soccer team VR The grid From
-    up above VR Pocket borealis The curiosity Make it fisheye About Careers
-    Events Products Support © 2021 Loopstudios. All rights reserved.
+        <div class="flex justify-center md:hidden mt-8">
+          <button
+            class="uppercase text-base font-alata tracking-[0.3125rem] border-black border-[1px] py-2 px-8 hover:bg-black hover:text-white transition-all ease-in-out duration-300"
+          >
+            see all
+          </button>
+        </div>
+      </section>
+      <!-- End Of Projects Section -->
+    </main>
 
     <div class="attribution">
       Challenge by
@@ -209,5 +381,65 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+
+    <footer class="bg-black py-11 text-white">
+      <div
+        class="container px-6 flex flex-col md:flex-row items-center justify-center md:justify-between"
+      >
+        <nav class="flex items-center flex-col md:items-start">
+          <div class="nav-brand">
+            <a href="#">
+              <img class="h-6" src="src/images/logo.svg" alt="Loopstudios" />
+            </a>
+          </div>
+
+          <ul
+            class="font-alata gap-8 flex flex-col md:flex-row text-white nav__links mt-6 text-base"
+          >
+            <li class="nav__link">
+              <a href="#about" class="relative">About</a>
+            </li>
+            <li class="nav__link">
+              <a href="#" class="relative">Careers</a>
+            </li>
+            <li class="nav__link">
+              <a href="#" class="relative">Events</a>
+            </li>
+            <li class="nav__link">
+              <a href="#products" class="relative">Products</a>
+            </li>
+            <li class="nav__link">
+              <a href="#" class="relative">Support</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="flex items-center flex-col md:items-end mt-12 md:mt-0">
+          <ul class="social__links items-center flex gap-8 mb-6">
+            <li class="nav__link">
+              <a href="#" class="relative"
+                ><img src="src/images/icon-facebook.svg" alt="facebook"
+              /></a>
+            </li>
+            <li class="social__link">
+              <a href="#" class="relative"
+                ><img src="src/images/icon-twitter.svg" alt="twitter"
+              /></a>
+            </li>
+            <li class="social__link">
+              <a href="#" class="relative"
+                ><img src="src/images/icon-pinterest.svg" alt="pinterest"
+              /></a>
+            </li>
+            <li class="social__link">
+              <a href="#" class="relative"
+                ><img src="src/images/icon-instagram.svg" alt="intagram"
+              /></a>
+            </li>
+          </ul>
+
+          <p>© 2021 Loopstudios. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

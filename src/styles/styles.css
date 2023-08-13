@@ -33,7 +33,8 @@
 }
 
 /* Nav links on hover */
-.nav__link a:after {
+.nav__link a:after,
+.social__link a:after {
   @apply absolute
   -bottom-2.5
   left-0
@@ -52,8 +53,13 @@
 /* Nav link on active */
 
 .nav__link a:hover:after,
-.nav__link--active a::after {
+.nav__link--active a::after,
+.social__link a:hover:after {
   width: 50%;
+}
+
+.social__link a:hover:after {
+  width: 100%;
 }
 
 /* Nav active states */
@@ -92,7 +98,19 @@
   padding: 2.5rem 0 !important;
 }
 
-/* Nav animations */
+/* Projects styling */
+
+.overlay {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.project:hover .overlay {
+  visibility: visible;
+  opacity: 0.75;
+}
+
+/* animations */
 @keyframes opac {
   from {
     opacity: 0;
