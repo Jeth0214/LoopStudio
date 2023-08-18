@@ -670,8 +670,16 @@ video {
   height: 1.5rem;
 }
 
+.h-\[650px\]{
+  height: 650px;
+}
+
 .min-h-screen{
   min-height: 100vh;
+}
+
+.min-h-\[650px\]{
+  min-height: 650px;
 }
 
 .w-0{
