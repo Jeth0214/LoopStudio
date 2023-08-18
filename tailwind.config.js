@@ -7,6 +7,10 @@ module.exports = {
         alata: ["Alata"],
         josefin: ["Josefin Sans"],
       },
+      backgroundImage: {
+        "hero-sm": "url('/src/images/mobile/image-hero.jpg')",
+        "hero-md": "url('/src/images/desktop/image-hero.jpg')",
+      },
     },
     container: {
       center: true,
