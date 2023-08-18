@@ -772,7 +772,7 @@ video {
 }
 
 .bg-hero-sm{
-  background-image: url('/src/images/mobile/image-hero.jpg');
+  background-image: url('../src/images/mobile/image-hero.jpg');
 }
 
 .bg-cover{
@@ -1051,19 +1051,6 @@ video {
   opacity: 0.75;
 }
 
-/* fallback hero section background image in case tailwindconfig don't work */
-
-.hero {
-  background-image: url("../images/mobile/image-hero.jpg");
-  background-color: #000;
-}
-
-@media (min-width: 768px) {
-  .hero {
-    background-image: url("../images/desktop/image-hero.jpg");
-  }
-}
-
 /* animations */
 
 @keyframes opac {
@@ -1177,7 +1164,7 @@ video {
   }
 
   .md\:bg-hero-md{
-    background-image: url('/src/images/desktop/image-hero.jpg');
+    background-image: url('../src/images/desktop/image-hero.jpg');
   }
 
   .md\:p-10{
