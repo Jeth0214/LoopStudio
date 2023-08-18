@@ -658,20 +658,16 @@ video {
   height: 0px;
 }
 
+.h-12{
+  height: 3rem;
+}
+
 .h-4{
   height: 1rem;
 }
 
 .h-6{
   height: 1.5rem;
-}
-
-.h-8{
-  height: 2rem;
-}
-
-.h-12{
-  height: 3rem;
 }
 
 .min-h-screen{
@@ -706,16 +702,8 @@ video {
   resize: both;
 }
 
-.scroll-pt-20{
-  scroll-padding-top: 5rem;
-}
-
 .scroll-pt-24{
   scroll-padding-top: 6rem;
-}
-
-.flex-row{
-  flex-direction: row;
 }
 
 .flex-col{
@@ -763,14 +751,14 @@ video {
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
-.border-white{
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
 .border-gray-700{
   --tw-border-opacity: 1;
   border-color: rgb(55 65 81 / var(--tw-border-opacity));
+}
+
+.border-white{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-black{
@@ -783,12 +771,12 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/src\/images\/mobile\/image-hero\.jpg\'\)\]{
-  background-image: url('/src/images/mobile/image-hero.jpg');
-}
-
 .bg-\[url\(\'src\/images\/mobile\/image-hero\.jpg\'\)\]{
   background-image: url('src/images/mobile/image-hero.jpg');
+}
+
+.bg-\[url\(\'\/src\/images\/mobile\/image-hero\.jpg\'\)\]{
+  background-image: url('/src/images/mobile/image-hero.jpg');
 }
 
 .bg-cover{
@@ -803,20 +791,12 @@ video {
   background-repeat: no-repeat;
 }
 
-.stroke-indigo-950{
-  stroke: #1e1b4b;
+.p-1{
+  padding: 0.25rem;
 }
 
 .p-6{
   padding: 1.5rem;
-}
-
-.p-2{
-  padding: 0.5rem;
-}
-
-.p-1{
-  padding: 0.25rem;
 }
 
 .px-4{
@@ -926,14 +906,6 @@ video {
 
 .underline{
   text-decoration-line: underline;
-}
-
-.opacity-50{
-  opacity: 0.5;
-}
-
-.opacity-40{
-  opacity: 0.4;
 }
 
 .opacity-60{
@@ -1195,12 +1167,12 @@ video {
     justify-content: space-between;
   }
 
-  .md\:bg-\[url\(\'\/src\/images\/desktop\/image-hero\.jpg\'\)\]{
-    background-image: url('/src/images/desktop/image-hero.jpg');
-  }
-
   .md\:bg-\[url\(\'src\/images\/desktop\/image-hero\.jpg\'\)\]{
     background-image: url('src/images/desktop/image-hero.jpg');
+  }
+
+  .md\:bg-\[url\(\'\/src\/images\/desktop\/image-hero\.jpg\'\)\]{
+    background-image: url('/src/images/desktop/image-hero.jpg');
   }
 
   .md\:p-10{
