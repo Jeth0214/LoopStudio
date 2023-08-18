@@ -1051,6 +1051,19 @@ video {
   opacity: 0.75;
 }
 
+/* fallback hero section background image in case tailwindconfig don't work */
+
+.hero {
+  background-image: url("../images/mobile/image-hero.jpg");
+  background-color: #000;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    background-image: url("../images/desktop/image-hero.jpg");
+  }
+}
+
 /* animations */
 
 @keyframes opac {
